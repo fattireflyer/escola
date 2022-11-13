@@ -42,7 +42,7 @@
 		</nav>
         <section class="welcome-text d-flex justify-content-center align-items-center flex-column">
         	<img src="logo.png" >
-        	<h4>Bem Vido</h4>
+        	<h4>Bem Vindo</h4>
         	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </section>
         <section id="about"
