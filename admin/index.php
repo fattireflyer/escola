@@ -1,8 +1,9 @@
-<?php 
+<?php
+echo "<script>console.log('é bah' );</script>"; 
 session_start();
 if (isset($_SESSION['admin_id']) && 
     isset($_SESSION['role'])) {
-
+      echo "<script>console.log('é bahhhhhhhh' );</script>"; 
     if ($_SESSION['role'] == 'Admin') {
  ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ if (isset($_SESSION['admin_id']) &&
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="body-home">
     <?php 
         include "inc/navbar.php";
      ?>
@@ -80,13 +81,12 @@ if (isset($_SESSION['admin_id']) &&
 </html>
 <?php 
 
-  }else {
-    header("Location: ../login.php");
+  } else {
+    header('Location: ../login.php');
     exit;
-  } 
-}else {
-	header("Location: ../login.php");
+  }
+} else {
+	header('Location: ../login.php');
 	exit;
-} 
-
+}
 ?>

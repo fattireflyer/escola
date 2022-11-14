@@ -29,18 +29,18 @@
 		    <label class="form-label">Usuário</label>
 		    <input type="text" 
 		           class="form-control"
-		           name="uname">
+		           name="usuario">
 		  </div>
 		  
 		  <div class="mb-3">
 		    <label class="form-label">Senha</label>
-		    <input type="senha" 
+		    <input type="password" 
 		           class="form-control"
-		           name="pass">
+		           name="senha">
 		  </div>
 
 		  <div class="mb-3">
-		    <label class="form-label">Logar Como</label>
+		    <label class="form-label">Tipo de usuário</label>
 		    <select class="form-control"
 		            name="role">
 		    	<option value="1">Admin</option>
@@ -55,7 +55,7 @@
         
         <br /><br />
         <div class="text-center text-light">
-        	Copyright &copy; 2022. All rights reserved.
+        	Copyright &copy; 2022. Todos direitos reservados.
         </div>
 
     	</div>

@@ -36,7 +36,7 @@ if (isset($_SESSION['admin_id']) &&
         include "inc/navbar.php";
      ?>
      <div class="container mt-5">
-        <a href="teacher.php"
+        <a href="professor.php"
            class="btn btn-dark">Voltar</a>
 
         <form method="post"

@@ -30,7 +30,7 @@ if (isset($_POST['primeiro_nome']) &&
     foreach ($_POST['disciplinas'] as $disciplina) {
     	$disciplinas .=$disciplina;
     }
-    $data = 'uname='.$usuario.'&primeiro_nome='.$primeiro_nome.'&ultimo_nome='.$ultimo_nome;
+    $data = 'usuario='.$usuario.'&primeiro_nome='.$primeiro_nome.'&ultimo_nome='.$ultimo_nome;
 
     if (empty($primeiro_nome)) {
 		$em  = "Necessário primeiro nome";

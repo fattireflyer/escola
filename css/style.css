@@ -10,6 +10,7 @@
 }
 #homeNav {
 	background: rgba(255,255,255, 0.5) !important;
+	border-radius: 5px;
 }
 .welcome-text {
 	min-height: 80vh;
@@ -71,7 +72,7 @@ textarea {
 }
 .login h3{
 	text-align: center;
-	font-size: 50px;
+	font-size: 40px;
 }
 .w-450 {
 	width: 450px;

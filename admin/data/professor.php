@@ -30,11 +30,11 @@ function getAllProfessores($conn){
 }
 
 // checa se usuário é unico
-function userNameEhUnico($uname, $conn, $professor_id=0){
+function userNameEhUnico($usuario, $conn, $professor_id=0){
    $sql = "SELECT usuario, professor_id FROM professores
            WHERE usuario=?";
    $stmt = $conn->prepare($sql);
-   $stmt->execute([$uname]);
+   $stmt->execute([$usuario]);
    
    if ($professor_id == 0) {
      if ($stmt->rowCount() >= 1) {

@@ -15,7 +15,7 @@
              href="index.php">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="teacher.php">Professores</a>
+          <a class="nav-link" href="professor.php">Professores</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="student.php">Alunos</a>

@@ -43,7 +43,7 @@
         <section class="welcome-text d-flex justify-content-center align-items-center flex-column">
         	<img src="logo.png" >
         	<h4>Bem Vindo</h4>
-        	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        	<p>Portal de gerenciamento escolar!</p>
         </section>
         <section id="about"
                  class="d-flex justify-content-center align-items-center flex-column">
@@ -55,8 +55,10 @@
 			    <div class="col-md-8">
 			      <div class="card-body">
 			        <h5 class="card-title">Sobre nós</h5>
-			        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			        <p class="card-text"><small class="text-muted">Y School</small></p>
+			        <p class="card-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec iaculis elit. Vivamus semper, diam quis tempor lobortis, nisi neque porttitor turpis, nec sagittis tellus nisl vitae libero. Nam pharetra mi lorem, quis fringilla tellus dignissim et. 
+					</p>
+			        <p class="card-text"><small class="text-muted">Escola</small></p>
 			      </div>
 			    </div>
 			  </div>
@@ -76,14 +78,14 @@
 			    <input type="text" class="form-control">
 			  </div>
 			  <div class="mb-3">
-			    <label class="form-label">NOme</label>
+			    <label class="form-label">Mensagem</label>
 			    <textarea class="form-control" rows="4"></textarea>
 			  </div>
 			  <button type="submit" class="btn btn-primary">Enviar</button>
 			</form>
         </section>
         <div class="text-center text-light">
-        	Copyright &copy; 2022. All rights reserved.
+        	Copyright &copy; 2022. Todos direitos reservados.
         </div>
 
     	</div>

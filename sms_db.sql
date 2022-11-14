@@ -18,14 +18,15 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sms_db`
+-- Database: `escola`
 --
-
+CREATE DATABASE escola;
 -- --------------------------------------------------------
+USE escola;
+--
+--
 
---
--- Table structure for table `admin`
---
+
 
 CREATE TABLE `admin` (
   `admin_id` int(11) NOT NULL,
@@ -38,9 +39,9 @@ CREATE TABLE `admin` (
 --
 -- Dumping data for table `admin`
 --
-
+-- usuario: gerente, senha: senha-gerente
 INSERT INTO `admin` (`admin_id`, `usuario`, `senha`, `primeiro_nome`, `ultimo_nome`) VALUES
-(1, 'elias', '$2y$10$H7obJEdmLzqqcPy7wQWhsOLUvrgzC8f1Y1or2Gxaza5z1PT0tvLy6', 'Elias', 'Abdurrahman');
+(1, 'gerente', '$2y$10$TM8WJINbajhO8OzWYr7FUuKNJs5rOYS3o2cQtSVlnzWmXnzPC0AWa', 'Joao', 'Silva');
 
 -- --------------------------------------------------------
 
@@ -82,10 +83,11 @@ CREATE TABLE `alunos` (
 --
 -- Dumping data for table `alunos`
 --
-
+-- jose senha: senha-jose
+-- maria senha: senha-maria
 INSERT INTO `alunos` (`aluno_id`, `usuario`, `senha`, `primeiro_nome`, `ultimo_nome`, `nota`) VALUES
-(1, 'john', '$2y$10$H1kAwLWHZx8LvsXAHvLV2eVyE0yeKMlckyd.p8j1Zu5TQjReP7r4i', 'John', 'Doe', 2),
-(3, 'abas', '$2y$10$KLFheMWgpLfoiqMuW2LQxOPficlBiSIJ9.wE2qr5yJUbAQ.5VURoO', 'Abas', 'A.', 1);
+(1, 'jose', '$2y$10$OlLt.Z3Gjt6x/.Tzi1QboelLexrvX1gvdo0iGOvk5WaNd3YEWiwYm', 'Jose', 'Silva', 2),
+(3, 'maria', '$2y$10$7Erb99F4QdOUCbavZeTWWupIVwFzDyCz2b/hNZuzfwnWz3rcff8a2', 'Maria', 'Santos', 1);
 
 -- --------------------------------------------------------
 
@@ -104,8 +106,8 @@ CREATE TABLE `disciplinas` (
 --
 
 INSERT INTO `disciplinas` (`disciplina_id`, `disciplina`, `disciplina_codigo`) VALUES
-(1, 'English', 'En'),
-(2, 'Physics', 'Phy');
+(1, 'Ingles', 'In'),
+(2, 'Física', 'Fi');
 
 -- --------------------------------------------------------
 
@@ -126,10 +128,11 @@ CREATE TABLE `professores` (
 --
 -- Dumping data for table `professores`
 --
-
+-- prof1 senha: senha-prof1
+-- prof2 senha: senha-prof2
 INSERT INTO `professores` (`professor_id`, `usuario`, `senha`, `primeiro_nome`, `ultimo_nome`, `disciplinas`, `notas`) VALUES
-(1, 'oliver', '$2y$10$FNAmnGXSWGIvRwW1j9iaDeomnHhku8a1LKlcO46I.6K/mEzQ2/Xi.', 'Oliver', 'Noah', '12', '12'),
-(3, 'elias', '$2y$10$0jm9PjYYMixif6dEzG0waOm91jV8bwW8eeHpHehAHVYEIZnfPgzNO', 'Elias', 'A.', '12', '1');
+(1, 'prof1', '$2y$10$abX9qJC4X3W52jQ/4X6E9uEnJcnlfKcJGlWWuNtcCniHiXpnixy/y', 'Julio', 'Oliveira', '12', '12'),
+(3, 'prof2', '$2y$10$NV754N8veWDKYG9k/ruHQ.Nl64a.v/ZwVd0XFTcL1ceEqaeatay7u', 'Julia', 'Bastos', '12', '1');
 
 --
 -- Indexes for dumped tables
