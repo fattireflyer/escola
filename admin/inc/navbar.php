@@ -18,7 +18,7 @@
           <a class="nav-link" href="professor.php">Professores</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="student.php">Alunos</a>
+          <a class="nav-link" href="aluno.php">Alunos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Secretaria</a>
